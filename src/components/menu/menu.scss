@@ -25,8 +25,13 @@
         font-size: 30px;
         font-weight: 300;
         color: white;
+        width: 60%;
 
         li{
+            margin-bottom: 25px;
+            &:hover{
+                font-weight: 500;
+            }
             a{
                 font-size: inherit;
                 color: inherit;
