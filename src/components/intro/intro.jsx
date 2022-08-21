@@ -12,7 +12,7 @@ export default function intro() {
         <div className="wrapper">
           <h2>Hi there, I'm</h2>
           <h1>Will Nascimento</h1>
-          <h3>React Developer <span></span></h3>
+          <h3>React  <span>Developer</span></h3>
         </div>
         <a href="#portfolio" className="portfolio">
           <img src="assets/down.png" alt="" />
