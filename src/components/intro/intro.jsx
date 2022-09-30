@@ -17,16 +17,16 @@ export default function Intro() {
     <div className='intro' id='intro'>
       <div className="left">
         <div className="imgContainer">
-          <img src="assets/eu quadrado.png" alt="" />
+          <img src="assets/eu5.png" alt="" />
         </div>
       </div>
       <div className="right">
         <div className="wrapper">
           <h2>Hi there, I'm</h2>
           <h1>Will Nascimento</h1>
-          <h3>  <span ref={textRef}></span></h3>
+          <h3>Freelance  <span ref={textRef}></span></h3>
         </div>
-        <a href="#portfolio" className="portfolio">
+        <a href="#portfolio" className="intro">
           <img src="assets/down.png" alt="" />
         </a>
       </div>

@@ -4,10 +4,9 @@
   overflow: hidden;
 
   .left {
-    flex: 0.5;
+    flex: 0.48;
     overflow: hidden;
     position: relative;
-
 
     .imgContainer {
       width: 700px;
@@ -15,22 +14,19 @@
       background-color: crimson;
       border-radius: 50%;
       display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      
-      
+      padding-top: 30px;
+
       img {
-        height: 140%;
-        align-items: center;
-        padding-top: 250px;
-        justify-content: center;
-        
+        height: 100%;
+        width: 100%;
+        max-width: 650px;
+        max-height: 650px;
+        object-fit: fill;
       }
     }
   }
   .right {
-    flex: 0.5;
+    flex: 0.6;
     position: relative;
 
     .wrapper{
@@ -58,7 +54,6 @@
     a{
         position: absolute;
         bottom: 10px;
-        background-color: white;
         left: 40%;
         img{
             width: 30px;
