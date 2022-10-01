@@ -3,15 +3,17 @@ import { init } from 'ityped'
 import { useEffect, useRef } from 'react'
 
 export default function Intro() {
+
   const textRef = useRef();
 
-  const teste =  init(textRef.current, {
-    showCursor: false,
-    backDelay: 1500,
-    strings: ["ReactJs Developer", "ReactNative Developer"],
-  });
-
-  useEffect(() => (teste));
+  useEffect(()=>{
+    init(textRef.current, { 
+      showCursor: true, 
+      backDelay: 1500,
+      backSpeed: 60,
+      strings: ["ReactJs", "React Native" ],
+     });
+  },[]);
 
   return (
     <div className='intro' id='intro'>
@@ -23,8 +25,8 @@ export default function Intro() {
       <div className="right">
         <div className="wrapper">
           <h2>Hi there, I'm</h2>
-          <h1>Will Nascimento</h1>
-          <h3>Freelance  <span ref={textRef}></span></h3>
+          <h1>Will Nascimento</h1>       
+          <h3>Freelance <span ref={textRef}></span> Developer</h3>
         </div>
         <a href="#portfolio" className="intro">
           <img src="assets/down.png" alt="" />
