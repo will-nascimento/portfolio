@@ -17,15 +17,16 @@
         display: flex;
 
         li{
-            font-size: 12px;
+            font-size: 14px;
             margin-right: 50px;
             padding: 7px;
+            border-radius: 10px;
+                cursor: pointer;
 
             &.active{
                 background-color: $mainColor;
                 color: white;
-                border-radius: 10px;
-                cursor: pointer;
+                
             }
         }
     }
