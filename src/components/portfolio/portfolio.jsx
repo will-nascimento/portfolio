@@ -1,50 +1,72 @@
+import PortfolioList from '../portfolioList/portfolioList';
 import './portfolio.scss'
 
-export default function portfolio() {
+export default function Portfolio() {
+
+  const list = [
+    {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "featured",
+      title: "Featured",
+    },
+    {
+      id: "featured",
+      title: "Featured",
+    },
+  ];
+
   return (
     <div className='portfolio' id='portfolio'>
       <h1>Portfolio</h1>    
       <ul>
-        <li className='active'>Soon</li>
-        <li>Soon</li>
-        <li>Soon</li>
-        <li>Soon</li>
-        <li>Soon</li>
-        <li>Soon</li>
+        {list.map((item) => (
+          <PortfolioList title={item.title}/>
+        ))}
       </ul> 
       <div className="container">
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+        <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
         </div>
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+        <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
         </div>
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+        <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
         </div>
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+        <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
         </div>
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+        <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
         </div>
         <div className="item">
-          <img style={{width:"150px"}} src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
+          <img src="https://static4.depositphotos.com/1009397/284/i/950/depositphotos_2846910-stock-photo-baby-cat-portrait.jpg" alt="" />
           <h3>
             Cat App - Soon
           </h3>
