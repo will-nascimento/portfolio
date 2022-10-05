@@ -8,6 +8,7 @@
 
     h1{
         font-size: 50px;
+        overflow: hidden;
     }
 
     ul{
@@ -22,6 +23,7 @@
             padding: 7px;
             border-radius: 10px;
             cursor: pointer;
+            overflow: hidden;
 
             &.active{
                 background-color: $mainColor;
@@ -36,6 +38,7 @@
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
+        overflow: hidden;
 
         .item{
             width: 220px;
@@ -50,10 +53,12 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+            
 
             h3{
                 position: absolute;
                 font-size: 20px;
+                
             }
 
             img{
