@@ -9,6 +9,11 @@
     h1{
         font-size: 50px;
         overflow: hidden;
+
+        @include mobile{
+            font-size: 30px;
+            padding-top: 20px;
+        }
     }
 
     ul{
@@ -16,6 +21,12 @@
         padding: 0;
         list-style: none;
         display: flex;
+
+        @include mobile{
+            flex-wrap: wrap;
+            justify-content: center;     
+            padding: 0 0 0 50px;
+        }
 
         li{
             font-size: 14px;
@@ -40,6 +51,11 @@
         flex-wrap: wrap;
         overflow: hidden;
 
+        @include mobile{
+            width: 100%;
+            overflow: hidden;
+        }
+
         .item{
             width: 220px;
             height: 150px;
@@ -53,6 +69,11 @@
             position: relative;
             transition: all .5s ease;
             cursor: pointer;
+
+            @include mobile{
+                width: 130px;
+                height: 120px;
+            }
             
 
             h3{

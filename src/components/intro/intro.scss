@@ -1,7 +1,14 @@
+@import "../../global.scss";
+
 .intro {
   background-color: white;
   display: flex;
   overflow: hidden;
+
+  @include mobile{
+    flex-direction: column;
+    align-items: center;
+  }
 
   .left {
     flex: 0.48;
@@ -17,12 +24,22 @@
       padding-top: 30px;
       float: right;
 
+      @include mobile{
+        align-items: flex-start;
+        justify-content: center;
+      }
+
       img {
         height: 100%;
         width: 100%;
         max-width: 650px;
         max-height: 650px;
         object-fit: fill;
+
+        @include mobile{
+            height: 50%;
+            width: 50%;
+        }
       }
     }
   }
@@ -38,12 +55,25 @@
         flex-direction: column;
         justify-content: center;
 
+        @include mobile{
+          padding: 0;
+          align-items: center;
+        }
+
         h1{
             font-size: 60px;
             margin: 10px 0;
+
+            @include mobile{
+              font-size: 40px;
+            }
         }
         h2{
             font-size: 35px;
+
+            @include mobile{
+              font-size: 30px;
+            }
         }
         h3{
             font-size: 30px;
@@ -62,6 +92,10 @@
               100%{
                 opacity: 0;
               }
+            }
+            
+            @include mobile{
+              font-size: 20px;
             }
         }
     }
