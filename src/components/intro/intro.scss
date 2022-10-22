@@ -103,6 +103,11 @@
         position: absolute;
         bottom: 10px;
         left: 40%;
+
+        @include mobile{
+          align-items: center;
+        }
+
         img{
             width: 30px;
             animation: arrowBlink 2s infinite;
