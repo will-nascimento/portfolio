@@ -7,12 +7,12 @@
     align-items: center;
     justify-content: space-around;
 
-
     h1 {
         font-size: 50px;
 
         @include mobile{
             font-size: 20px;
+
         }
     }
 
@@ -24,7 +24,9 @@
         justify-content: center;
 
         @include mobile {
+            height: 90%;
             flex-direction: column;
+            padding-top: 10px;
         }
 
         .card {
@@ -63,11 +65,19 @@
                 align-items: center;
                 justify-content: center;
 
+                @include mobile{
+                    overflow: hidden;
+                }
+
                 img {
 
                     &.left,
                     &.right {
                         height: 25px;
+                    }
+
+                    @include mobile{
+                        padding: 10px;
                     }
 
                     &.user {
@@ -89,10 +99,12 @@
                 padding: 10px;
                 background-color: rgb(240, 225, 228);
                 border-radius: 10px;
+                text-align: center;
 
                 @include mobile{
                     font-size: 13px;
-                    padding: 5px;
+                    padding: 8px;
+                    overflow: hidden;
                 }
             }
 

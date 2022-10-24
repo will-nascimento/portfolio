@@ -9,11 +9,12 @@ export default function testimonials() {
       img: "https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80",
       icon: "assets/youtube.png",
       desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+      featured: true,
     },
     {
       id: 2,
       name: "Allan",
-      title: "CEO of AAVR",
+      title: "CEO of AMSBA",
       img: "https://images.unsplash.com/photo-1521579880562-101f47676ee1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=445&q=80",
       icon: "assets/youtube.png",
       desc: "Lorem, ipsum dolor sit amet consectetur adipisicing elit.",
@@ -26,6 +27,7 @@ export default function testimonials() {
       img: "https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
       icon: "assets/youtube.png",
       desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit.",
+      featured: true,
     },
   ]
   return <div className='testimonials' id='testimonials'>
